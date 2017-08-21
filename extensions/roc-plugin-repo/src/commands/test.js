@@ -28,6 +28,9 @@ export default projects => ({
     transform: {
       '^.+\\.js$': require.resolve('./utils/jest/babel-jest-transformer.js'),
     },
+    moduleNameMapper: {
+      '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
+    },
     testMatch: [].concat(
       ...selected.map(({ path }) =>
         settings.test.map(pattern => `${path}/${pattern}`),

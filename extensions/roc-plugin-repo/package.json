@@ -36,6 +36,7 @@
     "execa": "0.6.0",
     "fs-readdir-recursive": "^1.0.0",
     "glob": "^7.1.2",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^20.0.4",
     "jest-cli": "^20.0.4",
     "listr": "^0.10.0",
